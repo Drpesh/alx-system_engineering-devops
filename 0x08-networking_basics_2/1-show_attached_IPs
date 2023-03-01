@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Show attached IPs
-ifconfig | grep "inet addr:" | cut -d ':' -f2 | cut -d ' ' -f1
+# script that displays all active IPv4 IPs on the machine it's executed on
+
+hostname -I
